@@ -1,0 +1,22 @@
+{
+  "manifest_version": 3,
+  "name": "skillshare Bar Hidder",
+  "description": "This extension hides the annoying skillshare progress bar",
+  "version": "1.0",
+  "browser_action": {
+    "default_icon": "lurker.png",
+    "default_popup": "popup.html"
+  },
+  "icons": {
+          "128": "lurker128.png" },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://www.skillshare.com/*"
+      ],
+      "js": [
+        "content.js"
+      ]
+    }
+  ]
+}
