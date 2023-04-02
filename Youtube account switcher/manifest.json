@@ -1,0 +1,22 @@
+{
+  "manifest_version": 2,
+  "name": "Account Switcher",
+  "description": "Switch accounts with a keyboard shortcut",
+  "version": "1.0",
+  "browser_action": {
+    "default_icon": "heart.png",
+    "default_popup": "popup.html"
+  },
+  "icons": {
+          "128":"heart.png" },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://www.youtube.com/*"
+      ],
+      "js": [
+        "content.js"
+      ]
+    }
+  ]
+}
